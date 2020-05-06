@@ -5,12 +5,15 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PersonaTest {
-	Persona persona = new Persona("16637685Z", "Pablo", "Saenz");
+	private Persona persona = new Persona("16637685Z", "Pablo", "Saenz");
 
 	@Test
 	public void testPersonaStringStringString() {
-		fail("Not yet implemented");
+		assertEquals(16637685,persona.getDni());
+		assertEquals(Pablo, persona.getNombre());
+		assertEquals(Saenz, persona.getApellido1());
 	}
+	
 
 	@Test
 	public void testGetDni() {
