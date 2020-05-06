@@ -44,7 +44,8 @@ public class PersonaTest {
 
 	@Test
 	public void testSetApellido1() {
-		fail("Not yet implemented");
+		persona.setApellido1("Jimenez");
+		assertEquals("Jimenez", persona.getApellido1());
 	}
 
 }
