@@ -18,9 +18,12 @@ public class PersonaTest {
 	}
 
 	@Test
-	public void testSetDni() {
-		fail("Not yet implemented");
-	}
+	public void testSetDni() throws Exception {
+		persona.setDni("15189446z");
+		assertEquals("11", persona.getDni());
+
+		}
+	
 
 	@Test
 	public void testGetNombre() {
@@ -31,6 +34,7 @@ public class PersonaTest {
 	public void testSetNombre() {
 		fail("Not yet implemented");
 	}
+	
 
 	@Test
 	public void testGetApellido1() {
