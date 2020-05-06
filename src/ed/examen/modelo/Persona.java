@@ -1,4 +1,9 @@
  package ed.examen.modelo;
+ /**
+  * 
+  * @author Pablo Saenz de Navarrete
+  *
+  */
 
 public class Persona{
 	
@@ -11,6 +16,12 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Constructor de Persona
+	 * @param dni
+	 * @param nombre
+	 * @param apellido1
+	 */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
@@ -20,6 +31,10 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Devuelve el DNI
+	 * @return
+	 */
 	public String getDni() {
 		return dni;
 	}
@@ -27,7 +42,13 @@ public class Persona{
 	
 	/*
 	 * Documentar y crear test unitario
+	 *
 	 * */
+	/**
+	 * COMPRUEBA SI EL DNI TIEN UNA LETRA AL FINAL
+	 * @param dni
+	 * @throws Exception
+	 */
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
 		if(Character.isLetter(dni.charAt(dni.length()))) {
@@ -40,6 +61,10 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Devuelve el nombre
+	 * @return
+	 */
 	public String getNombre() {
 		return nombre;
 	}
@@ -47,6 +72,10 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * 
+	 * @param nombre
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -54,6 +83,10 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Devuelve el apellido
+	 * @return
+	 */
 	public String getApellido1() {
 		return apellido1;
 	}
@@ -61,6 +94,10 @@ public class Persona{
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * 
+	 * @param apellido1
+	 */
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
 	}
