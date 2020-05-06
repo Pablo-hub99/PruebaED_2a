@@ -34,12 +34,12 @@ public class PersonaTest {
 
 	@Test
 	public void testGetApellido1() {
-		fail("Not yet implemented");
+		assertEquals("Saenz", persona.getDni());
 	}
 
 	@Test
 	public void testSetApellido1() {
-		assertEquals("Saenz", persona.getDni());
+		fail("Not yet implemented");
 	}
 
 }
