@@ -9,7 +9,13 @@ public class CursoTest {
 
 	@Test
 	public void testEliminarAlumno() {
-		fail("Not yet implemented");
+		Curso.aniadirAlumno("Pedro");
+		
+		int i = Curso.Alumno.size();
+		Boolean eliminado = Curso.eliminarAlumno("Pedro");
+		int j = Curso.Alumno.size();
+		assertEquals(i-1, j);	
+		assertTrue(eliminado);
 	}
 
 	@Test
