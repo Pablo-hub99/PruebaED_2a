@@ -2,14 +2,25 @@ package ed.examen.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * 
+ * @author Pablo Saenz de Navarrete
+ *
+ */
 
 public class Curso {
+	
 	
 	private List<Persona> listaAlumnos;
 
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * elimina alumnos
+	 * @param dni
+	 * @throws Exception
+	 */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
@@ -21,6 +32,10 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Añade alumnos
+	 * @param p
+	 */
 	public void aniadirAlumno(Persona p) {
 		listaAlumnos.add(p);
 	}
@@ -28,6 +43,11 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Comprueba si estan registrados o no
+	 * @param dni
+	 * @return encontrado
+	 */
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
@@ -43,6 +63,10 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Constrot de listaAlumnos
+	 */
+	
 	public Curso() {
 		listaAlumnos= new ArrayList<Persona>();
 	}
@@ -50,6 +74,11 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
+	/**
+	 * Cuenta el nuemor de alumnos
+	 * @return
+	 */
+	
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
 	
