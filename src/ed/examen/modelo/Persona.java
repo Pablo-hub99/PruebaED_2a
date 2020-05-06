@@ -1,4 +1,4 @@
-package ed.examen.modelo;
+ package ed.examen.modelo;
 
 public class Persona{
 	
