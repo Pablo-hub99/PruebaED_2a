@@ -14,7 +14,7 @@ public class PersonaTest {
 
 	@Test
 	public void testGetDni() {
-		fail("Not yet implemented");
+		assertEquals("16637685Z", persona.getDni());
 	}
 
 	@Test
@@ -39,7 +39,7 @@ public class PersonaTest {
 
 	@Test
 	public void testSetApellido1() {
-		fail("Not yet implemented");
+		assertEquals("Saenz", persona.getDni());
 	}
 
 }
