@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CursoTest {
+	Curso curso = new Curso();
 
 	@Test
 	public void testEliminarAlumno() {
@@ -13,7 +14,12 @@ public class CursoTest {
 
 	@Test
 	public void testAniadirAlumno() {
-		fail("Not yet implemented");
+		int i = Curso.Alumno.size();
+		Curso.aniadirAlumno("Pedro");
+		int j = Curso.Alumno.size();
+		
+		assertEquals(i+1,j);
+	
 	}
 
 	@Test
